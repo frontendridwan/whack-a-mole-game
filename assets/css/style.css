@@ -1,0 +1,82 @@
+html {
+  width: 1334px;
+}
+
+.body {
+    background-color: #ffbe2f !important;
+}
+
+@font-face {
+    font-family: "DK Lemon Yellow Sun";
+    src: url(../fonts/dk_lemon_yellow_sun/DK\ Lemon\ Yellow\ Sun.otf);
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'DK Lemon Yellow Sun' !important;
+    font-size: 100px !important; 
+    margin: 10px;
+}
+
+/* h2 {
+    text-align: center;
+} */
+
+input {
+    /* text-align: right; */
+    font-family: 'DK Lemon Yellow Sun';
+    font-size: 60px;
+    margin: auto;
+    opacity: 1;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+.col-8 {
+  cursor: url(../img/palu1.png), auto;
+}
+
+.col-8:active {
+  cursor: url(../img/palu2.png), auto;
+}
+
+.col-lg {
+  align-content: center !important;
+  margin: auto !important;
+}
+
+.tanah {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: center;
+}
+
+.tanah::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(../img/tanah.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -25px;
+}
+
+.tikus {
+  width: 100%;
+  height: 100%;
+  background: url(../img/tikus.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.3s;
+}
+
+.tanah.muncul .tikus {
+  top: -15px;
+}
