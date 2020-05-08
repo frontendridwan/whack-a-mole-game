@@ -7,8 +7,6 @@
     <title>Pukul Tikus Tanah</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,500&display=swap" rel="stylesheet"> -->
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -19,10 +17,15 @@
         <div class="form-group row">
             <label class="col-sm-12 col-form-label">
                 <h1>Whack-a-mole! <span class="papan-skor" id="highscore" name="highscore"> 0 </span><button type="submit" class="btn btn-light">Save!</button></h1>
+
             </label>
             <input type="hidden" class="form-control-plaintext mt-2" id="cobavalue" name="cobavalue" value="0">
             <input type="hidden" class="form-control-plaintext mt-2" id="hs" name="hs" value="<?= $user['highscore']; ?>">
-
+        </div>
+        <div class="form-group row" align="center">
+            <label class="col-sm col-form-label">
+                <h6>Countdown : <span id="timer"></span> sekon</h6>
+            </label>
         </div>
     </form>
 

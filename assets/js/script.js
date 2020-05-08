@@ -7,7 +7,7 @@ let tanahSebelumnya;
 let selesai;
 let skor;
 
-let highscore;
+var counter;
 
 function randomTanah(tanah) {
   const t = Math.floor(Math.random() * tanah.length);
@@ -38,7 +38,8 @@ function munculkanTikus() {
 
 function mulai() {
   selesai = false;
-  highscore = 0;
+  counter = 10;
+  countDown();
   skor = 0;
   papanSkor.textContent = 0;
   munculkanTikus();
@@ -58,4 +59,14 @@ function pukul() {
 tikus.forEach(t => {
   t.addEventListener('click', pukul);
 });
+
+function countDown() {
+  if (counter >= 0) {
+    document.getElementById("timer").innerHTML = counter;
+  }
+  counter -= 1;
+
+  var counter2 = setTimeout("countDown()", 1000);
+  return;
+}
 
