@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 05 Bulan Mei 2020 pada 09.42
+-- Waktu pembuatan: 01 Jun 2020 pada 11.11
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.1
 
@@ -40,8 +40,8 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`id`, `username`, `password`, `highscore`) VALUES
-(1, 'ridwan23', '$2y$10$P3Mg.GBkdsvLHS7rLRQLiOEUl3DhOWRr6MAMANJVCEpg7A9K/k1O6', 0),
-(2, 'secretarmy', '$2y$10$nUmsXksBGO5WKM2UpbnAO.KAIQAjx0tSrm9ZLGI2qokINOvACrN62', 0);
+(1, 'ridwan23', '$2y$10$P3Mg.GBkdsvLHS7rLRQLiOEUl3DhOWRr6MAMANJVCEpg7A9K/k1O6', 12),
+(2, 'secretarmy', '$2y$10$nUmsXksBGO5WKM2UpbnAO.KAIQAjx0tSrm9ZLGI2qokINOvACrN62', 10);
 
 --
 -- Indexes for dumped tables
